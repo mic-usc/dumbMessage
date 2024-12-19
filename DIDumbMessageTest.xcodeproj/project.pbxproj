@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		59DA76932D12EC1700A8B3C8 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 59DA76922D12EC1700A8B3C8 /* Factory */; };
+		59DA76B62D132C8400A8B3C8 /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 59DA76B52D132C8400A8B3C8 /* Dependencies */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		59DA766E2D12EAFE00A8B3C8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59DA76932D12EC1700A8B3C8 /* Factory in Frameworks */,
+				59DA76B62D132C8400A8B3C8 /* Dependencies in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +119,8 @@
 			);
 			name = DIDumbMessageTest;
 			packageProductDependencies = (
+				59DA76922D12EC1700A8B3C8 /* Factory */,
+				59DA76B52D132C8400A8B3C8 /* Dependencies */,
 			);
 			productName = DIDumbMessageTest;
 			productReference = 59DA765C2D12EAFD00A8B3C8 /* DIDumbMessageTest.app */;
@@ -195,6 +204,10 @@
 			);
 			mainGroup = 59DA76532D12EAFD00A8B3C8;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				59DA76912D12EC1700A8B3C8 /* XCRemoteSwiftPackageReference "Factory" */,
+				59DA76B42D132C8400A8B3C8 /* XCRemoteSwiftPackageReference "swift-dependencies" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 59DA765D2D12EAFD00A8B3C8 /* Products */;
 			projectDirPath = "";
@@ -583,6 +596,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		59DA76912D12EC1700A8B3C8 /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.3;
+			};
+		};
+		59DA76B42D132C8400A8B3C8 /* XCRemoteSwiftPackageReference "swift-dependencies" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-dependencies";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.6.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		59DA76922D12EC1700A8B3C8 /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 59DA76912D12EC1700A8B3C8 /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
+		59DA76B52D132C8400A8B3C8 /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 59DA76B42D132C8400A8B3C8 /* XCRemoteSwiftPackageReference "swift-dependencies" */;
+			productName = Dependencies;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 59DA76542D12EAFD00A8B3C8 /* Project object */;
 }
